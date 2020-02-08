@@ -19,13 +19,6 @@ Essentially what we are going to do in this project is build out a small microco
 | Linux/Raspberry Pi | The Rpi is an inexpensive credit card based computer running Linux that has a physical General Purpose Input Output interface or GPIO. This allows us to interface our electronics above. You should know how to build a Rpi and expose the GPIO to the breadboard above. Additionally, you need to know basic Linux (sudo, ls, pwd, chmod….) |
 | 	Programming (traditional) | You need to understand the basics of procedural and object based programming. I’ve chosen Python for this project because I've never professionally been paid to write it and it seems to be the best tool to use |
 | Amazon AWS Account | We need an account to create our masterpiece.|
-| Head on over to |
-* Lambda * DynamoDB|
-| AWS Lambda | Lamba allows us to create our application logic without a server in the most common languages including Python, Node, Java and .NET core. Using this model we pay only for the time that we use on the processor. |
-| AWS Dynamo | We need someplace to store “important” data that our users have acted on. We store the data in this NoSQL database |
-| AWS Python SDK | The Python SDK implements Boto3 and is the Python API for higher level functionality beyond what the ASK CLI offers. |
-| AWS CLI | A basic command line interface for an AWS client. You should know the operation in both Win10 and Linux. |
-
 
 ## STEP 1: Raspberry Pi Hardware Build
 
