@@ -1,7 +1,7 @@
 # Serverless Application Design and Implementation Using Raspberry Pi and AWS
 
 ## Project Goal:
-My primary goal is to create a working model for a basic “Internet of Things” (IoT) serverless application that can be deployed in a working manufacturing environment with existing systems. I wanted the application to be open enough such that it could easily be interfaced to other systems. Another feature I desinged into the project is wherever necessary we will use cloud native services to perform the task.
+My primary goal is to create a working model for a basic “Internet of Things” (IoT) serverless application that can be deployed in a working manufacturing environment with existing systems. I wanted the application to be open enough such that it could easily be interfaced to other systems. Another feature I designed into the project is wherever necessary we will use cloud native services to perform the task.
 	
 ## Problem Statement:
 The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to control the heat and humidity.   
