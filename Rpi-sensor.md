@@ -155,10 +155,11 @@ if arguments > 0:
 * Open a terminal session and type: `cd RPI`
 * Type: `sudo pip install RPi.GPIO`
 * Run the script above by typing: `python LED.py on` This will turn the LED on
-* Turn the LED off by typing: `python LED.py on`
+* Turn the LED off by typing: `python LED.py off`
 
 If this doesn’t work check your wiring. One thing that I will add is that if the LED doesn’t light up the first time try reversing the leads. It’s a diode and as such allows current to flow only in one direction. The other thing to mention is the value of the resistor controls how bright the LED is. I originally was using a green LED with a 270 ohm resistor and it would not light up. I switched to a red LED and everything worked. Try a lower value resistor if it’s not bright enough but make sure you use a resistor because you could damage the IO buss if you are drawing too much current.
 
-At this point in time we now have a working sensor that we can remote to. Put it somewhere in your house and connect it to your network. In this next section we are going to configure the sensor 
+## STEP 5: Amazon Web Services
+At this point in time we now have a working sensor that we can remote to. Put it somewhere in your house and connect it to your network. In this next section we are going to configure the sensor to talk to Amazon Web Services (AWS)
 
 
