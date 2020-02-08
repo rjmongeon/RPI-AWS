@@ -7,7 +7,10 @@ My primary goal is to create a working model for a basic “Internet of Things�
 The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to manually control the heat and humidity through a user interface.   
 
 ## The author's personal goals:
-I have 15 years of traditional application development experience using bare metal servers, relational databases, Visual Studio for .NET and Eclipse for everything else. I wanted to explore the world of serverless application design and development using an unfamiliar programming language. I'm also studying for AWS certification so this helps.
+I'm skilled at writing applications for bare metal systems (15 years) My quest is to find out how "serverless" computing works.
+
+
+I wanted to explore the world of serverless application design and development using an unfamiliar programming language. I'm also studying for AWS certification so this helps.
     
 ## General Idea of the project:
 Essentially what we are going to do in this project is build out a small microcomputer called a Raspberry Pi (Rpi) for use as a sensor and actuator. It's what Amazon calls an "IoT Thing". The Rpi will send real time sensor data to an outgoing software queue and at the same time monitor an incoming software queue for commands it needs to perform such as turn on or off the heat and humidity. After the Rpi is built then it’s just about installing the Python SDKs and writing the code to make it do what we want. This project touches on many technologies you should be familiar with if your goal is to get it working quickly. Here is a short list of some of things you need to know before diving into this:
@@ -18,8 +21,8 @@ Essentially what we are going to do in this project is build out a small microco
 | Basic Electronics | You should know what a breadboard is and be familiar with wiring basic electronic components on one. It’s nice to have a Volt-Ohm-Meter (VOM) as well so you can measure voltages and resitances. |
 | Linux/Raspberry Pi | The Rpi is an inexpensive credit card based computer running Linux that has a physical General Purpose Input Output interface or GPIO. This allows us to interface our electronics above. You should know how to build a Rpi and expose the GPIO to the breadboard above. Additionally, you need to know basic Linux (sudo, ls, pwd, chmod….) |
 | 	Programming (traditional) | You need to understand the basics of procedural and object based programming. I’ve chosen Python for this project because I've never professionally been paid to write it and it seems to be the best tool to use |
-|Serverless Programming | For ongoing cost considerations we are going to run the application in the cloud on the free tier level. We will be using the Amazon Web Services suite of services. | 
-| AWS SQS | Simple Queue services. This allows us to store real-time sensor messages for later processing. We can add and delete messages from different hosts. This is where we will push incoming tasks into the system for later processing. |
+| Amazon AWS Account | We need an account to create our masterpiece. Head on over to
+* Lambda * DynamoDB|
 | AWS Lambda | Lamba allows us to create our application logic without a server in the most common languages including Python, Node, Java and .NET core. Using this model we pay only for the time that we use on the processor. |
 | AWS Dynamo | We need someplace to store “important” data that our users have acted on. We store the data in this NoSQL database |
 | AWS Python SDK | The Python SDK implements Boto3 and is the Python API for higher level functionality beyond what the ASK CLI offers. |
