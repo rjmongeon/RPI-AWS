@@ -21,7 +21,7 @@ Essentially what we are going to do in this project is build out a small microco
 |Serverless Programming | For ongoing cost considerations we are going to run the application in the cloud on the free tier level. We will be using the Amazon Web Services suite of services. | 
 | AWS SQS | Simple Queue services. This allows us to store real-time sensor messages for later processing. We can add and delete messages from different hosts. This is where we will push incoming tasks into the system for later processing. |
 | AWS Lambda | Lamba allows us to create our application logic without a server in the most common languages including Python, Node, Java and .NET core. Using this model we pay only for the time that we use on the processor. |
-| AWS Dynamo | We need someplace to store “important” data that our users have acted on. This is where we store it. |
+| AWS Dynamo | We need someplace to store “important” data that our users have acted on. We store the data in this NoSQL database |
 | AWS Python SDK | The Python SDK implements Boto3 and is the Python API for higher level functionality beyond what the ASK CLI offers. |
 | AWS CLI | A basic command line interface for an AWS client. You should know the operation in both Win10 and Linux. |
 
