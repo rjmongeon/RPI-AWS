@@ -1,19 +1,18 @@
 # Serverless Application Design and Implementation Using Raspberry Pi and AWS
 
 ## Project Goal:
-	My primary goal is to create a working model for a basic “Internet of Things” (IoT) serverless application that can be deployed in a working manufacturing environment with existing systems. I wanted the application to be open enough such that it could easily be interfaced to other systems. Another feature I desinged into the project is wherever necessary we will use cloud native services to perform the task.
-
+My primary goal is to create a working model for a basic “Internet of Things” (IoT) serverless application that can be deployed in a working manufacturing environment with existing systems. I wanted the application to be open enough such that it could easily be interfaced to other systems. Another feature I desinged into the project is wherever necessary we will use cloud native services to perform the task.
+	
 ## Problem Statement:
-	The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to control the heat and humidity.   
+The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to control the heat and humidity.   
 
 ## The author's personal goals:
-    I have 15 years of traditional application development experience using bare metal servers, relational databases, Visual Studio for .NET and Eclipse for everything else. My last programming job was in 2014 as a web developer. I'm still in the IT field now but not in a programmer or developer role. This is how I update my skills beyond what is currently being taught in colleges.
-
+I have 15 years of traditional application development experience using bare metal servers, relational databases, Visual Studio for .NET and Eclipse for everything else. My last programming job was in 2014 as a web developer. I'm still in the IT field now but not in a programmer or developer role. This is how I update my skills beyond what is currently being taught in colleges.
+    
 ## General Idea of the project:
-	Essentially what we are going to do in this project is build out a small microcomputer called a Raspberry Pi (Rpi) for use as a sensor and actuator. It's what Amazon calls an "IoT Thing". The Rpi will send real time sensor data to an outgoing software queue and at the same time monitor an incoming software queue for commands it needs to perform such as turn on or off the heat and humidity. After the Rpi is built then it’s just about installing the Python SDKs and writing the code to make it do what we want. This project touches on many technologies you should be familiar with if your goal is to get it working quickly. Here is a short list of some of things you need to know before diving into this:
-
+Essentially what we are going to do in this project is build out a small microcomputer called a Raspberry Pi (Rpi) for use as a sensor and actuator. It's what Amazon calls an "IoT Thing". The Rpi will send real time sensor data to an outgoing software queue and at the same time monitor an incoming software queue for commands it needs to perform such as turn on or off the heat and humidity. After the Rpi is built then it’s just about installing the Python SDKs and writing the code to make it do what we want. This project touches on many technologies you should be familiar with if your goal is to get it working quickly. Here is a short list of some of things you need to know before diving into this:
+	
 ## Prerequisites:
-
 | Tech | Experience |
 | --- | --- |
 | Basic Electronics | You should know what a breadboard is and be familiar with wiring basic electronic components on one. It’s nice to have a Volt-Ohm-Meter (VOM) as well so you can measure voltages and resitances. |
