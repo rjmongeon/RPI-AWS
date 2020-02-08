@@ -7,7 +7,7 @@ My primary goal is to create a working model for a basic “Internet of Things�
 The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to manually control the heat and humidity through a user interface.   
 
 ## The author's personal goals:
-I'm skilled at writing applications for bare metal systems (15 years) My quest is to find out how "serverless" computing works.
+My quest is to find out how a serverless application actually works.
 
 
 I wanted to explore the world of serverless application design and development using an unfamiliar programming language. I'm also studying for AWS certification so this helps.
