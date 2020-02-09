@@ -8,7 +8,7 @@ Essentially what we are going to do in this project is build out a small microco
 The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to manually control the heat and humidity through a user interface.   
 
 ## The author's personal goals:
-My quest is to find out how a serverless application actually works and any design patterns that are useful in that development. 
+I have many years experience writing typical monolithic n-tier applications. My quest is to find out how a serverless application actually works and uncover any design patterns that are useful in the process. 
 
 ## Prerequisites:
 | Tech | Experience |
