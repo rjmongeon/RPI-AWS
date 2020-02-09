@@ -1,8 +1,8 @@
 # Serverless Application Design and Implementation Using Raspberry Pi and AWS
 
 ## Project Goal:
-The goal here is to look at application design 20 years ago.
-	
+The goal here is really to migrate exsisting bare metal applications to use cloud based services.
+
 ## Problem Statement:
 The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to manually control the heat and humidity through a user interface.   
 
