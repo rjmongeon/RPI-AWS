@@ -1,7 +1,8 @@
 # Serverless Application Design and Implementation Using Raspberry Pi and AWS
+## Part 1 of 3
 
 ## General Idea of the project:
-Essentially what we are going to do in this project is build out a small microcomputer called a Raspberry Pi (Rpi) for use as a sensor and actuator. It's what Amazon calls an "IoT Thing". The Rpi will send real time sensor data to an outgoing software queue and at the same time monitor an incoming software queue for commands it needs to perform such as turn on or off the heat and humidity. After the Rpi is built then it’s just about installing the Python SDKs and writing the code to make it do what we want. This project touches on many technologies you should be familiar with if your goal is to get it working quickly. 
+Essentially what we are going to do in this project is build out a small microcomputer called a Raspberry Pi (Rpi) for use as a sensor and actuator. It's what Amazon calls an "IoT Thing". The Rpi will send real time sensor data to an outgoing software queue and at the same time monitor an incoming software queue for commands it needs to perform such as turn on or off the heat and humidity. After the Rpi is built then we will install the AWS Python SDKs and write the code to interface the device with the cloud. This project touches on many technologies you should be familiar with if your goal is to get it working quickly. 
 
 ## Problem Statement:
 The Production department needs to be able to monitor and control the humidity and temperature of a “clean room” producing vegetable produce. The current process is manual involving employees to physically look at gauges, write log entries and adjust a humidifier and thermostat on an hourly schedule. The Production department wants to automate the logging process but still allow for an operator to manually control the heat and humidity through a user interface.   
