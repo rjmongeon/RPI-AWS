@@ -17,7 +17,7 @@ Essentially what we are going to do in this project is build out a small microco
 | --- | --- |
 | Basic Electronics | You should know what a breadboard is and be familiar with wiring basic electronic components on one. It’s nice to have a Volt-Ohm-Meter (VOM) as well so you can measure voltages and resitances. |
 | Linux/Raspberry Pi | The Rpi is an inexpensive credit card based computer running Linux that has a physical General Purpose Input Output interface or GPIO. This allows us to interface our electronics above. You should know how to build a Rpi and expose the GPIO to the breadboard above. Additionally, you need to know basic Linux (sudo, ls, pwd, chmod….) |
-| 	Programming (traditional) | You need to understand the basics of procedural and object based programming. I’ve chosen Python for this project because I've never professionally been paid to write it and it seems to be the best tool to use |
+| 	Programming (traditional) | You need to understand the basics of procedural and object based programming. I’ve chosen Python for this project because It's new to me (VB and Java is what I got paid for) |
 | Amazon AWS Account | We need an account to create our masterpiece.|
 
 ## STEP 1: Raspberry Pi Hardware Build
