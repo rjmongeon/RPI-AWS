@@ -1,5 +1,5 @@
 # Serverless Application Design and Implementation Using Raspberry Pi and AWS
-## Part 1 of 3
+## Part 1 of 3: Hardware Build
 
 ## General Idea of the project:
 Essentially what we are going to do in this project is build out a small microcomputer called a Raspberry Pi (Rpi) for use as a sensor and actuator. It's what Amazon calls an "IoT Thing". The Rpi will send real time sensor data to an outgoing software queue and at the same time monitor an incoming software queue for commands it needs to perform such as turn on or off the heat and humidity. After the Rpi is built then we will install the AWS Python SDKs and write the code to interface the device with the cloud. This project touches on many technologies you should be familiar with if your goal is to get it working quickly. 
@@ -156,6 +156,6 @@ If you have followed along with me thus far we have built out our Rpi sensor and
 
 ![pydev](images/pi-dev.jpg "pydev")
 
-At this point in time we now have a working sensor that we can remote to. Put it somewhere in your house and connect it to your network. In this next section we are going to configure the sensor to talk to Amazon Web Services (AWS)
+At this point in time we now have a working sensor that we can remote to. Put it somewhere in your house and connect it to your network. You can do all the development on your Windows 10 box. In fact, if you expose the RDP port through your router you could take your laptop anywhere. 
 
 
