@@ -121,11 +121,9 @@ GPIO.setup(LED, GPIO.OUT)
     
 def LEDon():
     GPIO.output(LED,GPIO.HIGH)
-    print("LED is on")
 
 def LEDoff():
     GPIO.output(LED,GPIO.LOW)
-    print("LED is off")
 
 arguments = len(sys.argv) - 1
 
