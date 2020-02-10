@@ -9,7 +9,7 @@ This is a serverless, event driven application. The major modules of this applic
 I kept the overall design in this stage small in order to get a simple proof of concept running. Adding additional modules to this application should be a simple task after we define the infrastructure.
 
 ## Operation:
-The heart of this application really is the software Queue. We are going to define a Queue using the SNS service. The Queue will serve as a place to store our tasks in the form of messages. Amazon designed SQS based loosly on [MQTT](http://http://mqtt.org/). The Python SDK for MQTT is called [Paho](https://pypi.org/project/paho-mqtt/) Spend some time learning MQTT as it's basically how IoT works on any cloud platform. I'm going to be using a single Queue for this module. My thought was 1 Queue for each major function.
+The heart of this application really is the software Queue. We are going to define a Queue using the SNS service. The Queue will serve as a place to store our tasks in the form of messages. Amazon designed SQS based loosly on [MQTT](http://mqtt.org/). The Python SDK for MQTT is called [Paho](http://pypi.org/project/paho-mqtt/) Spend some time learning MQTT as it's basically how IoT works on any cloud platform. I'm going to be using a single Queue for this module. My thought was 1 Queue for each major function.
 
 Previously we built out and tested our Rpi IoT sensor. We are going to use the Rpi to poll the room for temperature and humidity once every hour and send that data to the Queue. The Rpi also has to monitor the Queue for specific messages asking it to turn on/off a switch that controls heat.
 
