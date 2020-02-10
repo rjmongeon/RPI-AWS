@@ -2,7 +2,7 @@
 ## Part 2 of 3: Application Design
 
 ## High Level Overview:
-This is a serverless, event driven application. The major modules of this application are broken down into separate functions using various AWS services. The design pattern is similar to Service Oriented Architecture (SOA) and is stateless by nature. Here is a high level overview of my design:
+This is a serverless, event driven application. The major modules of this application are broken down into separate functions using various AWS services. The design pattern is similar to Service Oriented Architecture (SOA) and is stateless by nature. Here is a high level overview of the design:
 
 ![app-dev](images/app-design.jpg "app-dev")
 
