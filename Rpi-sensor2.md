@@ -39,6 +39,6 @@ I'm using the Python 3 stack on both the Win10 and Rpi hosts. I use Visual Studi
 Testing and debugging the code can be challenging just based upon the environment we are using. For instance, how do you step through code on a cloud service? My strategy has been to construct a wrapper around the cloud function so I can execute it locally. Once it runs clean I "unwrap" it and add some CloudWatch logging. I'm fairly new to cloud debugging so I'll be learning along the way.
 
 ## Author Notes:
-Python is new to me. I started playing with it in 2019. My professional experience is in ANSI C, Visual Basic and Java. The last professional code I wrote was back in 2014. This is my attempt to update my developer toolbox and get back into software development.
+Python is new to me. I started playing with it in 2019. My professional experience is in ANSI C, Visual Basic and Java. The last professional code I wrote was back in 2014. This is my attempt to update my developer toolbox.
 
 
