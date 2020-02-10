@@ -156,4 +156,4 @@ If you have followed along with me thus far we have built out our Rpi sensor and
 
 At this point in time we now have a working sensor that we can remote to. Put it somewhere in your house and connect it to your network. You can do all the development on your Windows 10 box. In fact, if you expose the RDP port through your router you could do the rest of the development from anywhere.
 
-# [Next: Application Design](Rpi-sensor.md)
+# [Next: Application Design](Rpi-sensor2.md)
