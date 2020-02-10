@@ -2,4 +2,4 @@
 This project is a template for a native cloud based application. It uses a tiny Raspberry Pi microcomputer as a sensor device that communicates with the cloud by sending sensor data and listening for events on a software queue.
 
 # [Application Design](Rpi-sensor2.md)
-# [Hardware Build:](Rpi-sensor.md)
+# [Hardware Build](Rpi-sensor.md)
