@@ -38,7 +38,7 @@ Use the [following guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/getti
 ## Initializing the AWS CLI
 Now we need to setup the default AWS security for the AWS CLI. Use the [following guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) to setup the AWS CLI. When you have completed all the above actions you should be able to type the following in the command line on both the Rpi and the Win10 box:
     `aws iam get-user`
-You should see something like:
+and both machines should return:
 
 ```json
 {
