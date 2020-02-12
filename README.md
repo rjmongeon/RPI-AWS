@@ -4,3 +4,4 @@ This project is a template for a native cloud based application. It uses a tiny 
 # [Application Design](Rpi-sensor2.md)
 # [Project Use Case and Hardware Build](Rpi-sensor.md)
 # [AWS SDK installation](SDK-install.md)
+# [AWS SQS Integration](SQS-Integration.md)
