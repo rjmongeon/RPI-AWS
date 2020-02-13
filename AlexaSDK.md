@@ -40,7 +40,7 @@ boto3                                1.11.16
 botocore                             1.14.16
 ...
 ```
-So now we have all of our depandent modules. The actual location of the place we need place place our code in is called `site-packages` and for us that location is:
+So now we have all of our depandent modules. The actual location of the place we need place our code in is called `site-packages` directory and for us that location is:
 ```
     (skill_env) F:\AWS\skill\skill_env\Lib\site-packages>
 ```    
