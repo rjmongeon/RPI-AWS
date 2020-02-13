@@ -3,7 +3,7 @@
 ## Setup ASK SDK
 We are going setup our Win10 host setup for Alexa skill development. Use the [following instructions](https://developer.amazon.com/en-US/docs/alexa/alexa-skills-kit-sdk-for-python/set-up-the-sdk.html) 
 
-## Python Virtual Development
+## Setup ASK SDK on Python Virtual Development
 Since the majority of the instructions I have seen for Alexa Skill Dev is based on using Python Vitrual Environments we are going to use that technique for development on the Win10 host. Follow [this guide](https://developer.amazon.com/en-US/docs/alexa/alexa-skills-kit-sdk-for-python/set-up-the-sdk.html#set-up-sdk-in-virtual-environment) to set up the virtual environment.
 
 ## Python Virtual Development with Win10
