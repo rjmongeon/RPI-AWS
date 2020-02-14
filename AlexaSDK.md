@@ -49,5 +49,5 @@ So now we have all of our depandent modules. The actual location of the place we
 Use the following instructions to [Implement Hello World](https://developer.amazon.com/en-US/docs/alexa/alexa-skills-kit-sdk-for-python/develop-your-first-skill.html).
 
 
-
+#...Working on this part ~ 
 
