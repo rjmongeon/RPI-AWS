@@ -6,4 +6,4 @@ This project is a template for a native cloud based application. It uses a tiny 
 # [AWS SDK installation](SDK-install.md)
 # [AWS SQS Integration](SQS-Integration.md)
 # [Alexa SDK installation](AlexaSDK.md)
-# [A]exa Skill Development](AlexaSkillTemplate.md)
+# [Alexa Skill Development](AlexaSkillTemplate.md)
