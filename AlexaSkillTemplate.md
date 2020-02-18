@@ -19,7 +19,7 @@ to actually quickly develop and test the code. The other option is to use a full
     `get data` and click `the + sign` to add the utternace. Add `get latest data`, `sensor data` and `latest data` as well.
 - Step 10: Click `Save Model` and then `Build Model` and wait until you get a successful build.
 - Step 11: Test the skill's voice user interface. In the top right corner click the `Evaluate Model` button.
-- Step 12: In the `Utterance Profiler` endter `get sensor data` and click `Submit`
+- Step 12: In the `Utterance Profiler` enter `get sensor data` and click `Submit`
 - Step 13: Insure that you utterance was mapped to the `getData intent`. We will need our skill to implement this event.
 - Step 14: Click on `JSON Editor` and note the JSON code should look similar to what I have below:
 
