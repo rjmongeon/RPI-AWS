@@ -70,9 +70,156 @@ to actually quickly develop and test the code. The other option is to use a full
 ## Create the Lambda code
 We are creating some custom code for the Lambda back end. The goal is to be able to edit and debug on the fly so as long as we only use the default libraries we should be alright.
 
-# TODO: ~
-Implement the Lambda function 
- 
+# Here is the code framework I've been working with:
 
+```
+
+
+from botocore.vendored import requests
+import collections
+import boto3
+import time
+import json
+import urllib3
+
+from boto3.dynamodb.conditions import Key, Attr
+
+def GetWelcomeMessage():
+    return "You can say Get Sensor Data or Get Last Data"
+
+##############################
+# Builders
+##############################
+def build_PlainSpeech(body):
+    speech = {}
+    speech['type'] = 'PlainText'
+    speech['text'] = body
+    return speech
+
+def build_response(message, session_attributes={}):
+    response = {}
+    response['version'] = '1.0'
+    response['sessionAttributes'] = session_attributes
+    response['response'] = message
+    return response
+
+def build_SimpleCard(title, body):
+    card = {}
+    card['type'] = 'Simple'
+    card['title'] = title
+    card['content'] = body
+    return card
+
+##############################
+# Responses
+##############################
+def conversation(title, body, session_attributes):
+    speechlet = {}
+    speechlet['outputSpeech'] = build_PlainSpeech(body)
+    speechlet['card'] = build_SimpleCard(title, body)
+    speechlet['shouldEndSession'] = False
+    return build_response(speechlet, session_attributes=session_attributes)
+
+def statement(title, body):
+    speechlet = {}
+    speechlet['outputSpeech'] = build_PlainSpeech(body)
+    speechlet['card'] = build_SimpleCard(title, body)
+    speechlet['shouldEndSession'] = True
+    return build_response(speechlet)
+
+def continue_dialog():
+    message = {}
+    message['shouldEndSession'] = False
+    message['directives'] = [{'type': 'Dialog.Delegate'}]
+    return build_response(message)
+
+# Say a sentence but don't end the conversation
+def statementKeepSession(title, body, session_attributes):
+    speechlet = {}
+    speechlet['outputSpeech'] = build_PlainSpeech(body)
+    speechlet['card'] = build_SimpleCard(title, body)
+    speechlet['shouldEndSession'] = False
+    return build_response(speechlet, session_attributes=session_attributes)
+
+##############################
+# Custom Intents
+##############################
+def GetSensorData_intent(event, context):
+    strCN = GetWelcomeMessage()
+    return statement("Template", strCN)
+
+##############################
+# Required Intents
+##############################
+def cancel_intent():
+    return statement("CancelIntent", "You want to cancel")	#don't use CancelIntent as title it causes code reference error during certification 
+
+def help_intent():
+    return statement("CancelIntent", "You want help")		#same here don't use CancelIntent
+
+def stop_intent():
+    return statement("StopIntent", "You want to stop")		#here also don't use StopIntent
+
+# this event gets called when the user switches the application. it was defined in 
+# the docs after I started learning
+# it wasn't handled in the example I saw and was adding frustration to learning
+def fallback_intent():
+    return statement("FallbackIntent", "FallBack intent was invoked, you have ended the session")
+
+##############################
+# On Launch
+##############################
+def on_launch(event, context):
+    # strTest = " on launch succeeded "
+    # strQuery = GetTempInfo()
+    strResp = GetWelcomeMessage()
+    return statement("Greetings", "Welcome to the Messege queue. " + strResp)
+    
+def on_launchNotHandled(event, context):
+    str = event['request']['type']
+    return statement("Unhandled", "event type is unhandled for request type, " + str)
+
+
+##############################
+# Routing: Here we are mapping VUI intents to code
+##############################
+def intent_router(event, context):
+    intent = event['request']['intent']['name']
+    szErr = "Inside intent router looking for intent, " + intent
+
+    # Custom Intents
+    if intent == "getSensorData":
+        return GetSensorData_intent(event, context)
+        
+    # Required Intents
+    if intent == "AMAZON.CancelIntent":
+        return cancel_intent()
+
+    if intent == "AMAZON.HelpIntent":
+        return help_intent()
+
+    if intent == "AMAZON.StopIntent":
+        return stop_intent()
+        
+    if intent == "AMAZON.FallbackIntent":
+        return fallback_intent()
+
+    return szErr
+# end intent router
+
+
+##############################
+# Program Entry
+##############################
+def lambda_handler(event, context):
+    if event['request']['type'] == "LaunchRequest":
+        return on_launch(event, context)
+
+    elif event['request']['type'] == "IntentRequest":
+        return intent_router(event, context)
+    else:
+        return on_launchNotHandled(event, context)
+
+```
 
 
