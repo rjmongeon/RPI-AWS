@@ -5,4 +5,5 @@ This project is a template for a native cloud based application. It uses a tiny 
 # [Sensor Hardware Build](Rpi-sensor.md)
 # [AWS SDK installation](SDK-install.md)
 # [AWS SQS Integration](SQS-Integration.md)
-# [ALexa SDK installation](AlexaSDK.md)
+# [Alexa SDK installation](AlexaSDK.md)
+# [A]exa Skill Development](AlexaSkillTemplate.md)
