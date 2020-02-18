@@ -53,6 +53,4 @@ Use the following instructions to [Implement Hello World](https://developer.amaz
 Implement the Lambda function 
 
 
-## Tina says to shut it and that I'm annoying... what do you think?
-
 
